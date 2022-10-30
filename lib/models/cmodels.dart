@@ -6,16 +6,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-// CollectionReference users = FirebaseFirestore.instance.collection("users");
-//
-// adduser() {
-//   users
-//       .add({"email": email, "password": password, "time": DateTime.now()})
-//       .then((value) => print("user added"))
-//       .catchError((error) => print(error));
-// }
 
-//sdfsdf
+
 List<Map> cars = <Map>[];
 
 void addCar(
@@ -34,7 +26,6 @@ void addCar(
     'GearOilName': gearName
   });
   carsData.doc(loggedInUser.uid);
-  print("takkkkkkkkkfaaaaaaaa");
 }
 
 register() async {
